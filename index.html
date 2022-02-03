@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/passinho.css">
+    <script src="JS/passinho.js" async></script>
+    <title>theCode</title>
+</head>
+<body>
+
+    <header>
+        <h1>
+            theCode
+        </h1>
+    </header>
+
+    <!-- Criando uma box primaria que fica como fundo -->
+    <main class="box">
+        <!-- Criando a tag de form -->
+        <form action="">
+            <!-- Criando uma tag fieldset principal que pega todo o conteudo do formulário -->
+            <fieldset class="principal">
+                <!-- Criando a caixa de titulo do formulario -->
+                <legend> Passinho do Romano </legend>
+
+                <!-- Criando uma div para input de text area em que usuario colocará o codigo -->
+                <div class="inputBox">
+                    <label for="codigo"></label>
+                    <textarea name="codigo" id="inputCodigo" rows="5" placeholder="Digite seu código aqui: "></textarea>
+                </div>
+
+                <!-- Criando div para as opções de radio cifra de Cesar ou base de 64 -->
+                <div class="radioOpcao">
+                    <p><strong id="de">(De) </strong>codifique para: </p>
+                                      
+                    <input type="radio" id="base64" name="opcao" value="base64" >
+                    <label for="base64">Base de 64</label>
+
+                    <input type="radio" id="cifraCesar" name="opcao" value="cifraCesar" > 
+                    <label for="cifraCesar">Cifra de César</label>
+                </div> <!--radioOpcao-->
+
+                <!-- Criando div para o incremento da cifra de cesar, caso seja opcao escolhida -->
+                <div class="caixaCesar">
+                    <label for="incrementoCesar" class="bold">Incremento:</label>
+                    <input type="number" name="incremento:" id="incrementoCesar" min="0">
+                </div>
+
+                <!-- Criando div para as opções de radio codificar ou descodificar -->
+                <div class="radioEscolha">
+                    <p>Escolha:</p>
+                    <input type="radio" id="codificar" name="escolha" value="codificar">
+                    <label for="codificar">Codificar</label>
+                    
+                    <input type="radio" id="decodificar" name="escolha" value="decodificar">
+                    <label for="decodificar">Decodificar</label>
+                </div>
+
+                <!-- Criando div para o texto com resposta que aperecerá após botao de enviar -->
+                <div class="boxResposta">
+                    <label for="resposta"> Resposta: </label>
+                    <input type="text" id="resposta">
+                </div>
+
+                <!-- Criando div para o botão de envio -->
+                <div class="submit">
+                    <input type="submit" name="btnEnvio" id="btnEnvio">
+                </div>
+            </fieldset>
+        </form>
+    </main><!--box-->
+
+</body>
+</html>

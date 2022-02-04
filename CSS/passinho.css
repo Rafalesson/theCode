@@ -10,7 +10,7 @@ html, body {
 
 header{
     width: 100%;
-    height: 9vh;
+    height: 6vh;
     margin-top: -22px;
     text-align: center;
     background-color: rgba(255, 123, 0, 0.6);
@@ -194,4 +194,20 @@ p {
     .boxResposta {
         margin: 35px;
     }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    color: whitesmoke;
+    background-color: rgb(157, 78, 4);
+    position: relative;
+    bottom: 0px;
+}
+
+footer:hover{
+    color: black;
 }
